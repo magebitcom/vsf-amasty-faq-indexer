@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Magebit\FaqIndexer\Indexer\QuestionIndexerHandlerVirtual" type="Divante\VsbridgeIndexerCore\Indexer\GenericIndexerHandler">
+        <arguments>
+            <argument name="indexIdentifier" xsi:type="string">vue_storefront_catalog</argument>
+            <argument name="typeName" xsi:type="string">faq_question</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magebit\FaqIndexer\Model\Indexer\Question">
+        <arguments>
+            <argument name="indexerHandler" xsi:type="object">Magebit\FaqIndexer\Indexer\QuestionIndexerHandlerVirtual</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="Magebit\FaqIndexer\Indexer\CategoryIndexerHandlerVirtual" type="Divante\VsbridgeIndexerCore\Indexer\GenericIndexerHandler">
+        <arguments>
+            <argument name="indexIdentifier" xsi:type="string">vue_storefront_catalog</argument>
+            <argument name="typeName" xsi:type="string">faq_category</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magebit\FaqIndexer\Model\Indexer\Category">
+        <arguments>
+            <argument name="indexerHandler" xsi:type="object">Magebit\FaqIndexer\Indexer\CategoryIndexerHandlerVirtual</argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="magebit_faq_question_indexer" class="Magebit\FaqIndexer\Model\Indexer\Question" group="indexer">
+        <subscriptions>
+            <table name="amasty_faq_question" entity_column="question_id"/>
+        </subscriptions>
+    </view>
+
+    <view id="magebit_faq_category_indexer" class="Magebit\FaqIndexer\Model\Indexer\Category" group="indexer">
+        <subscriptions>
+            <table name="amasty_faq_category" entity_column="category_id"/>
+        </subscriptions>
+    </view>
+</config>

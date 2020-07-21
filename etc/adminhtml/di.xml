@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Amasty\Faq\Controller\Adminhtml\Category\Save">
+        <plugin name="update_category_elastic_save" type="Magebit\FaqIndexer\Plugin\Save" />
+    </type>
+
+    <type name="Amasty\Faq\Controller\Adminhtml\Category\Delete">
+        <plugin name="update_category_elastic_delete" type="Magebit\FaqIndexer\Plugin\Save" />
+    </type>
+
+    <type name="Amasty\Faq\Controller\Adminhtml\Question\Save">
+        <plugin name="update_category_elastic_save" type="Magebit\FaqIndexer\Plugin\Save" />
+    </type>
+
+    <type name="Amasty\Faq\Controller\Adminhtml\Question\Delete">
+        <plugin name="update_category_elastic_delete" type="Magebit\FaqIndexer\Plugin\Save" />
+    </type>
+</config>
