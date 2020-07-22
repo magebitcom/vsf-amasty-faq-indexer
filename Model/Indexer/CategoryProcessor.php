@@ -24,5 +24,5 @@ class CategoryProcessor extends \Magento\Framework\Indexer\AbstractProcessor
     /**
      * Indexer ID
      */
-    const INDEXER_ID = 'magebit_faq_category_indexer';
+    const INDEXER_ID = 'vsbridge_faq_category_indexer';
 }

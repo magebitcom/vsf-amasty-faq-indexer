@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
-    <indexer id="magebit_faq_question_indexer" view_id="magebit_faq_question_indexer" class="Magebit\FaqIndexer\Model\Indexer\Question">
+    <indexer id="vsbridge_faq_question_indexer" view_id="vsbridge_faq_question_indexer" class="Magebit\FaqIndexer\Model\Indexer\Question">
         <title translate="true">Vsbridge Amasty Faq Question indexer</title>
         <description translate="true">Update Faq questions in Elastic</description>
     </indexer>
 
-    <indexer id="magebit_faq_category_indexer" view_id="magebit_faq_category_indexer" class="Magebit\FaqIndexer\Model\Indexer\Category">
+    <indexer id="vsbridge_faq_category_indexer" view_id="vsbridge_faq_category_indexer" class="Magebit\FaqIndexer\Model\Indexer\Category">
         <title translate="true">Vsbridge Amasty Faq Category indexer</title>
         <description translate="true">Update Faq categories in Elastic</description>
     </indexer>

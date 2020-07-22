@@ -61,6 +61,7 @@ class Question implements MappingInterface
             'status' => ['type' => FieldInterface::TYPE_INTEGER],
             'url_key' => ['type' => FieldInterface::TYPE_KEYWORD],
             'question_category_ids' => ['type' => FieldInterface::TYPE_TEXT],
+            'product_ids' => ['type' => FieldInterface::TYPE_TEXT],
             'question_categories' => ['type' => FieldInterface::TYPE_TEXT],
         ];
 

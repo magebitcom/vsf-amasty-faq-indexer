@@ -139,7 +139,14 @@ class Question
                 }
 
                 $questionData['question_category_ids'] = $post->getCategories() ? array_map('intval', explode(",", $post->getCategories())) : [];
-                $questionData['product_ids'] = $post->getProductIds() ? array_map('intval', explode(",", $post->getProductIds())) : [];
+
+                $productIds = $post->getProductIds(); // For some reason this can be a string, null and array
+
+                if (is_string($productIds)) {
+                    $productIds = explode(",", $productIds);
+                }
+
+                $questionData['product_ids'] = $productIds ? array_map('intval', $productIds) : [];
 
                 $questionData['exclude_sitemap'] = (int) $questionData['exclude_sitemap'];
                 $questionData['is_show_full_answer'] = (int) $questionData['is_show_full_answer'];
