@@ -55,7 +55,7 @@ class Save
      * @return mixed
      * @throws Exception
      */
-    public function afterExecute($subject, $result)
+    public function afterSave($subject, $result)
     {
         $this->categoryProcessor->reindexAll();
         $this->questionProcessor->reindexAll();
